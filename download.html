@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download &mdash; GDAL  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/gdal.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="canonical" href="https://gdal.org/download.html"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Build hints (cmake)" href="build_hints.html" />
+    <link rel="prev" title="GDAL" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="index.html">
+            <img src="_static/gdalicon.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Download</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#current-release">Current Release</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#past-releases">Past Releases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development-source">Development Source</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#build-requirements">Build requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#build-instructions">Build instructions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#binaries">Binaries</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#windows">Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debian">Debian</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conda">Conda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linux-docker-images">Linux Docker images</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html">Build hints (cmake)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="programs/index.html">Programs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drivers/raster/index.html">Raster drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drivers/vector/index.html">Vector drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/index.html">User</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community/index.html">Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors/index.html">Sponsors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing/index.html">How to contribute?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GDAL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html"> GDAL  documentation </a> &raquo;</li>
+      
+      <li>Download</li>
+    
+
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/OSGeo/gdal/edit/master/doc/source/download.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="build_hints.html" class="btn btn-neutral float-right" title="Build hints (cmake)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="GDAL" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="download">
+<span id="id1"></span><h1>Download<a class="headerlink" href="#download" title="Permalink to this headline"></a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#download" id="id51">Download</a></p>
+<ul>
+<li><p><a class="reference internal" href="#current-release" id="id52">Current Release</a></p></li>
+<li><p><a class="reference internal" href="#past-releases" id="id53">Past Releases</a></p></li>
+<li><p><a class="reference internal" href="#development-source" id="id54">Development Source</a></p>
+<ul>
+<li><p><a class="reference internal" href="#build-requirements" id="id55">Build requirements</a></p></li>
+<li><p><a class="reference internal" href="#build-instructions" id="id56">Build instructions</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#binaries" id="id57">Binaries</a></p>
+<ul>
+<li><p><a class="reference internal" href="#windows" id="id58">Windows</a></p></li>
+<li><p><a class="reference internal" href="#debian" id="id59">Debian</a></p></li>
+<li><p><a class="reference internal" href="#conda" id="id60">Conda</a></p></li>
+<li><p><a class="reference internal" href="#linux-docker-images" id="id61">Linux Docker images</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="current-release">
+<h2>Current Release<a class="headerlink" href="#current-release" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><strong>2022-05-13</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.5.0/gdal-3.5.0.tar.gz">gdal-3.5.0.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.5.0/NEWS.md">3.5.0 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.5.0/gdal-3.5.0.tar.gz.md5">3.5.0 md5</a>)</p></li>
+</ul>
+</section>
+<section id="past-releases">
+<h2>Past Releases<a class="headerlink" href="#past-releases" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><strong>2022-04-22</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.4.3/gdal-3.4.3.tar.gz">gdal-3.4.3.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.4.3/gdal/NEWS.md">3.4.3 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.4.3/gdal-3.4.3.tar.gz.md5">3.4.3 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2022-03-08</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.4.2/gdal-3.4.2.tar.gz">gdal-3.4.2.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.4.2/gdal/NEWS.md">3.4.2 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.4.2/gdal-3.4.2.tar.gz.md5">3.4.2 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2021-12-27</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.4.1/gdal-3.4.1.tar.gz">gdal-3.4.1.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.4.1/gdal/NEWS.md">3.4.1 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.4.1/gdal-3.4.1.tar.gz.md5">3.4.1 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2021-11-08</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.4.0/gdal-3.4.0.tar.gz">gdal-3.4.0.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.4.0/gdal/NEWS.md">3.4.0 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.4.0/gdal-3.4.0.tar.gz.md5">3.4.0 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2021-10-29</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.3.3/gdal-3.3.3.tar.gz">gdal-3.3.3.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.3.3/gdal/NEWS">3.3.3 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.3.3/gdal-3.3.3.tar.gz.md5">3.3.3 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2021-09-01</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.3.2/gdal-3.3.2.tar.gz">gdal-3.3.2.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.3.2/gdal/NEWS">3.3.2 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.3.2/gdal-3.3.2.tar.gz.md5">3.3.2 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2021-07-05</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.3.1/gdal-3.3.1.tar.gz">gdal-3.3.1.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.3.1/gdal/NEWS">3.3.1 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.3.1/gdal-3.3.1.tar.gz.md5">3.3.1 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2021-05-03</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.3.0/gdal-3.3.0.tar.gz">gdal-3.3.0.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.3.0/gdal/NEWS">3.3.0 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.3.0/gdal-3.3.0.tar.gz.md5">3.3.0 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2021-05-04</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.2.3/gdal-3.2.3.tar.gz">gdal-3.2.3.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.2.3/gdal/NEWS">3.2.3 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.2.3/gdal-3.2.3.tar.gz.md5">3.2.3 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2021-03-10</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.2.2/gdal-3.2.2.tar.gz">gdal-3.2.2.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.2.2/gdal/NEWS">3.2.2 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.2.2/gdal-3.2.2.tar.gz.md5">3.2.2 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2020-12-28</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.2.1/gdal-3.2.1.tar.gz">gdal-3.2.1.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.2.1/gdal/NEWS">3.2.1 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.2.1/gdal-3.2.1.tar.gz.md5">3.2.1 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2020-10-26</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.2.0/gdal-3.2.0.tar.gz">gdal-3.2.0.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.2.0/gdal/NEWS">3.2.0 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.2.0/gdal-3.2.0.tar.gz.md5">3.2.0 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2020-10-23</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.1.4/gdal-3.1.4.tar.gz">gdal-3.1.4.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.1.4/gdal/NEWS">3.1.4 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.1.4/gdal-3.1.4.tar.gz.md5">3.1.4 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2020-09-01</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.1.3/gdal-3.1.3.tar.gz">gdal-3.1.3.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.1.3/gdal/NEWS">3.1.3 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.1.3/gdal-3.1.3.tar.gz.md5">3.1.3 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2020-07-07</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.1.2/gdal-3.1.2.tar.gz">gdal-3.1.2.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.1.2/gdal/NEWS">3.1.2 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.1.2/gdal-3.1.2.tar.gz.md5">3.1.2 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2020-06-22</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.1.1/gdal-3.1.1.tar.gz">gdal-3.1.1.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.1.1/gdal/NEWS">3.1.1 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.1.1/gdal-3.1.1.tar.gz.md5">3.1.1 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2020-05-03</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.1.0/gdal-3.1.0.tar.gz">gdal-3.1.0.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.1.0/gdal/NEWS">3.1.0 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.1.0/gdal-3.1.0.tar.gz.md5">3.1.0 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2020-01-28</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.0.4/gdal-3.0.4.tar.gz">gdal-3.0.4.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.0.4/gdal/NEWS">3.0.4 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.0.4/gdal-3.0.4.tar.gz.md5">3.0.4 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2020-01-08</strong> <a class="reference external" href="https://download.osgeo.org/gdal/2.4.4/gdal-2.4.4.tar.gz">gdal-2.4.4.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v2.4.4/gdal/NEWS">2.4.4 Release Notes</a> (<a class="reference external" href="https://download.osgeo.org/gdal/2.4.4/gdal-2.4.4.tar.gz.md5">2.4.4 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2020-01-08</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.0.3/gdal-3.0.3.tar.gz">gdal-3.0.3.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.0.3/gdal/NEWS">3.0.3 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.0.3/gdal-3.0.3.tar.gz.md5">3.0.3 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2019-10-28</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.0.2/gdal-3.0.2.tar.gz">gdal-3.0.2.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.0.2/gdal/NEWS">3.0.2 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.0.2/gdal-3.0.2.tar.gz.md5">3.0.2 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2019-10-28</strong> <a class="reference external" href="https://download.osgeo.org/gdal/2.4.3/gdal-2.4.3.tar.gz">gdal-2.4.3.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v2.4.3/gdal/NEWS">2.4.3 Release Notes</a> (<a class="reference external" href="https://download.osgeo.org/gdal/2.4.3/gdal-2.4.3.tar.gz.md5">2.4.3 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2019-06-28</strong> <a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.0.1/gdal-3.0.1.tar.gz">gdal-3.0.1.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v3.0.1/gdal/NEWS">3.0.1 Release Notes</a> (<a class="reference external" href="https://github.com/OSGeo/gdal/releases/download/v3.0.1/gdal-3.0.1.tar.gz.md5">3.0.1 md5</a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>2019-06-28</strong> <a class="reference external" href="https://download.osgeo.org/gdal/2.4.2/gdal-2.4.2.tar.gz">gdal-2.4.2.tar.gz</a> <a class="reference external" href="https://github.com/OSGeo/gdal/blob/v2.4.2/gdal/NEWS">2.4.2 Release Notes</a> (<a class="reference external" href="https://download.osgeo.org/gdal/2.4.2/gdal-2.4.2.tar.gz.md5">2.4.2 md5</a>)</p></li>
+</ul>
+</section>
+<section id="development-source">
+<span id="source"></span><h2>Development Source<a class="headerlink" href="#development-source" title="Permalink to this headline"></a></h2>
+<p>The main repository for GDAL is located on github at
+<a class="reference external" href="https://github.com/OSGeo/GDAL">https://github.com/OSGeo/GDAL</a>.</p>
+<p>You can obtain a copy of the active source code by issuing the following
+command</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">OSGeo</span><span class="o">/</span><span class="n">GDAL</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<section id="build-requirements">
+<h3>Build requirements<a class="headerlink" href="#build-requirements" title="Permalink to this headline"></a></h3>
+<p>To build GDAL 3 or later, you need <em>at a minimum</em> a C++11 compatible compiler, and
+<a class="reference external" href="https://proj.org">PROJ 6 or later</a>.
+This will only give you a minimum build which will lack a lot of drivers.
+Consult <a class="reference internal" href="drivers/raster/index.html#raster-drivers"><span class="std std-ref">Raster drivers</span></a> and <a class="reference internal" href="drivers/vector/index.html#vector-drivers"><span class="std std-ref">Vector drivers</span></a> pages for additional optional
+dependencies.</p>
+</section>
+<section id="build-instructions">
+<h3>Build instructions<a class="headerlink" href="#build-instructions" title="Permalink to this headline"></a></h3>
+<p>See <a class="reference external" href="https://trac.osgeo.org/gdal/wiki/BuildHints">https://trac.osgeo.org/gdal/wiki/BuildHints</a> for hints for existing
+autoconf and nmake build systems.</p>
+<p>From GDAL 3.5, an <em>experimental</em> <a class="reference internal" href="build_hints.html#build-hints"><span class="std std-ref">CMake-based build</span></a> is available.</p>
+</section>
+</section>
+<section id="binaries">
+<h2>Binaries<a class="headerlink" href="#binaries" title="Permalink to this headline"></a></h2>
+<p>In this section we list a number of the binary distributions of GDAL
+all of which should have fully reproducible open source build recipes.</p>
+<section id="windows">
+<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline"></a></h3>
+<p>Windows builds are available via <a class="reference external" href="https://anaconda.org/conda-forge/gdal">Conda Forge</a> (64-bit only). See the
+<a class="reference internal" href="#conda"><span class="std std-ref">Conda</span></a> section for more detailed information.</p>
+</section>
+<section id="debian">
+<h3>Debian<a class="headerlink" href="#debian" title="Permalink to this headline"></a></h3>
+<p>Debian packages are now available on <a class="reference external" href="https://tracker.debian.org/pkg/gdal">Debian Unstable</a>.</p>
+</section>
+<section id="conda">
+<span id="id50"></span><h3>Conda<a class="headerlink" href="#conda" title="Permalink to this headline"></a></h3>
+<p><a class="reference external" href="https://anaconda.org">Conda</a> can be used on multiple platforms (Windows, macOS, and Linux) to
+install software packages and manage environments. Conda packages for GDAL are
+available at <a class="reference external" href="https://anaconda.org/conda-forge/gdal">https://anaconda.org/conda-forge/gdal</a>.</p>
+<p>Latest version: <a class="reference external" href="https://anaconda.org/conda-forge/gdal"><img alt="Conda badge" src="https://anaconda.org/conda-forge/gdal/badges/version.svg" /></a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="p">[</span><span class="o">-</span><span class="n">c</span> <span class="n">channel</span><span class="p">]</span> <span class="p">[</span><span class="n">package</span><span class="o">...</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">gdal</span>
+</pre></div>
+</div>
+</section>
+<section id="linux-docker-images">
+<h3>Linux Docker images<a class="headerlink" href="#linux-docker-images" title="Permalink to this headline"></a></h3>
+<p>Images with nightly builds of GDAL master and tagged releases are available at
+<a class="reference external" href="https://hub.docker.com/r/osgeo/gdal/tags">Docker Hub</a></p>
+<p>Information on the content of the different configurations can be found at
+<a class="reference external" href="https://github.com/OSGeo/gdal/tree/master/docker">https://github.com/OSGeo/gdal/tree/master/docker</a></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="build_hints.html">Build hints (cmake)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="build_hints.html#build-requirements">Build requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="build_hints.html#cmake">CMake</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#cmake-general-configure-options">CMake general configure options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#cmake-package-dependent-options">CMake package dependent options</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#armadillo">Armadillo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#arrow">Arrow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#blosc">Blosc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#brunsli">BRUNSLI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#cfitsio">CFITSIO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#crnlib">Crnlib</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#curl">CURL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#cryptopp">CryptoPP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#deflate">Deflate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#ecw">ECW</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#expat">EXPAT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#filegdb">FileGDB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#freexl">FreeXL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#fyba">FYBA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#geotiff">GEOTIFF</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#geos">GEOS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#gif">GIF</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#gta">GTA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#heif">HEIF</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#hdf4">HDF4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#hdf5">HDF5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#hdfs">HDFS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#iconv">Iconv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#idb">IDB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#jpeg">JPEG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#jpeg12">JPEG12</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#json-c">JSON-C</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#jxl">JXL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#kdu">KDU</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#kea">KEA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#lerc">LERC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#libkml">LibKML</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#liblzma">LibLZMA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#libxml2">LibXml2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#luratech">LURATECH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#lz4">LZ4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#mongocxx">MONGOCXX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#mrsid">MRSID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#mssql-ncli">MSSQL_NCLI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#mssql-odbc">MSSQL_ODBC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#mysql">MYSQL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#netcdf">NetCDF</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#odbc">ODBC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#odbc-cpp">ODBC-CPP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#ogdi">OGDI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#opencad">OpenCAD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#opencl">OpenCL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#openexr">OpenEXR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#openjpeg">OpenJPEG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#openssl">OpenSSL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#oracle">Oracle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#parquet">Parquet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#pcre2">PCRE2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#pdfium">PDFIUM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#png">PNG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#poppler">Poppler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#postgresql">PostgreSQL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#proj">PROJ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#qhull">QHULL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#rasterlite2">RASTERLITE2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#rdb">rdb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#spatialite">SPATIALITE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#sqlite3">SQLite3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#sfcgal">SFCGAL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#swig">SWIG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#teigha">TEIGHA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#tiff">TIFF</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#tiledb">TileDB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#webp">WebP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#xercesc">XercesC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#zlib">ZLIB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_hints.html#zstd">ZSTD</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#selection-of-drivers">Selection of drivers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#build-drivers-as-plugins">Build drivers as plugins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#python-bindings-options">Python bindings options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#java-bindings-options">Java bindings options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#c-bindings-options">C# bindings options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#driver-specific-options">Driver specific options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="build_hints.html#building-on-windows-with-conda-dependencies-and-visual-studio">Building on Windows with Conda dependencies and Visual Studio</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#install-git">Install git</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#install-miniconda">Install miniconda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#install-gdal-dependencies">Install GDAL dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#checkout-gdal-sources">Checkout GDAL sources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#build-gdal">Build GDAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_hints.html#cross-compiling-for-android">Cross-compiling for Android</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="build_hints.html" class="btn btn-neutral float-right" title="Build hints (cmake)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="GDAL" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <div class="info">
+      <a class="logo-link" href="https://osgeo.org">
+        <div class="osgeo-logo"></div>
+      </a>
+      <div class="copyright">
+      
+
+      &copy; 1998-2022 <a href="https://github.com/warmerdam">Frank Warmerdam</a>,
+      <a href="https://github.com/rouault">Even Rouault</a>, and
+      <a href="https://github.com/OSGeo/gdal/graphs/contributors">others</a>
+
+
+      
+      </div>
+    </div>
+  </div>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
